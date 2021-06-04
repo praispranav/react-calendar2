@@ -332,7 +332,7 @@ export function isWeekend(date) {
 
     case CALENDAR_TYPES.ISO_8601:
     case CALENDAR_TYPES.US:
-      return weekday === SATURDAY || weekday === SUNDAY;
+      return weekday === SUNDAY;
 
     default:
       throw new Error('Unsupported calendar type.');
